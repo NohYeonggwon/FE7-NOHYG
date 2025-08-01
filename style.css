@@ -44,18 +44,7 @@ article .column p {
     margin-top: 30px;
 }
 
-.page1 {
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #1a242f;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin: 10px 3px;
-    color: rgb(0, 0, 0);
-    background-color: #acacac;
-}
-
-.page2 {
+.page {
     display: inline-block;
     text-decoration: none;
     border: 1px solid #1a242f;
@@ -66,10 +55,52 @@ article .column p {
     background-color: #2c3e50;
 }
 
+.on {
+    color: rgb(0, 0, 0);
+    background-color: #acacac;
+}
+
 footer {
-    text-align: center; font-size: 12px; margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 30px;
 }
 
 footer p {
     margin: 0;
+}
+
+form>div {
+    width: 330px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form>div label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form>label {
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form>textarea {
+    width: 330px;
+    height: 130px;
+}
+
+form>button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
