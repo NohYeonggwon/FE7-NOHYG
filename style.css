@@ -107,6 +107,14 @@ article>section {
     line-height: 40px;
 }
 
+.news .left h3 span {
+    display: inline-block;
+    background-color: #f71a1a;
+    color: #fff;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
 .news .left .date {
     height: 18px;
     color: #888;
