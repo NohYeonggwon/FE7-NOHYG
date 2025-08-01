@@ -1,3 +1,17 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard";
+}
+
+li,
+ol {
+    list-style: none;
+}
+
 body {
     margin: 20px auto;
     width: 1000px;
@@ -8,7 +22,10 @@ body {
     color: #222;
     word-break: keep-all;
 }
+/* --------------------------------------------------------------------------- */
 
+/* --------------------------------------------------------------------------- */
+/* header */
 header>h1 {
     text-align: center;
     font-size: 50px;
@@ -17,29 +34,105 @@ header>h1 {
 
 header>p {
     text-align: right;
+    margin-bottom: 25px;
 }
 
 .headline>h2 {
     text-align: center;
+    margin-bottom: 15px;
 }
+/* --------------------------------------------------------------------------- */
 
+/* --------------------------------------------------------------------------- */
+/* section */
 section {
-    padding: 0 40px;
+    padding: 25px 40px;
 }
 
+section h3 {
+    margin-bottom: 15px;
+}
+/* --------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------- */
+/* page2 call */
+.call p {
+    margin-bottom: 15px;
+}
+/* --------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------- */
+/* page1 article */
 article {
     display: flex;
     width: 100%;
+    padding: 30px 0;
 }
 
 article>section {
     width: 50%;
+    padding: 0 40px;
+}
+/* --------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------- */
+/* page1 news */
+.news {
+    display: flex;
+    padding: 35px;
 }
 
-article .column p {
-    padding: 0 20px 0 20px;
+.news>div {
+    width: 50%;
 }
 
+.news .left h3 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.news .left .date {
+    height: 18px;
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.news .right {
+    padding: 0 30px;
+}
+
+.news .right a {
+    display: block;
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+
+.news .right img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.news .right p {
+    margin: 10px 0 0 5px;
+    color: #888;
+    font-size: 14px;
+}
+/* --------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------- */
+/* page1 interview */
+.interview p {
+    margin-bottom: 10px;
+}
+/* --------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------- */
+/* 페이지 버튼 */
 .page-btn {
     text-align: center;
     margin-top: 30px;
@@ -60,7 +153,10 @@ article .column p {
     color: rgb(0, 0, 0);
     background-color: #acacac;
 }
+/* --------------------------------------------------------------------------- */
 
+/* --------------------------------------------------------------------------- */
+/* Footer */
 footer {
     text-align: center;
     font-size: 12px;
@@ -105,3 +201,87 @@ form>button {
     border-radius: 4px;
     cursor: pointer;
 }
+/* --------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------- */
+/* page1 가로세로퍼즐 */
+.word-game h3 {
+    margin-bottom: 15px;
+}
+
+.word-game a {
+    display: inline-block;
+    text-decoration: none;
+    color: #888;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.word-game a:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+.word-game>div {
+    display: flex;
+    align-items: center;
+}
+
+.puzzle {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-template-rows: repeat(5, 40px);
+    gap: 2px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 40px;
+    position: relative;
+}
+
+.cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.cell .number {
+    position: absolute;
+    top: -12px;
+    left: 2px;
+    font-size: 10px;
+    color: black;
+    height: auto;
+}
+
+.black {
+    background-color: black;
+}
+
+.hints {
+    width: 750px;
+    display: flex;
+}
+
+.hints>div {
+    width: 50% ;
+    padding-left: 40px;
+}
+
+.hints ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+/* --------------------------------------------------------------------------- */
